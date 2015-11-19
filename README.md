@@ -21,7 +21,7 @@ DI - dagger 2 <br />
 view binding - Butterknife <br />
 lets use rxJava? <br />
 <br />
-Probably no graphics will attend hackathon so we go with material-ish design keeping in mind palette of taiga.io. <br />
+Probably no graphics will attend coding so we go with material-ish design keeping in mind palette of taiga.io. <br />
 If somebody has some ideas -- let me know :) <br />
 <br />
 https://taigaio.github.io/taiga-doc/dist/api.html 
