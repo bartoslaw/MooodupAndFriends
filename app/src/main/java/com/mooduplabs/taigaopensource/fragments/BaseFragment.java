@@ -7,7 +7,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.mooduplabs.taigaopensource.requestdispatchers.BaseRequestDispatcher;
+
 public class BaseFragment extends Fragment {
+
+    BaseRequestDispatcher requestDispatcher;
 
     @Nullable
     @Override
