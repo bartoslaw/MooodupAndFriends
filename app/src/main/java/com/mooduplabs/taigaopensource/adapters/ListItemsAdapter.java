@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.mooduplabs.taigaopensource.viewmodels.ListItemViewModel;
+import com.mooduplabs.taigaopensource.viewmodels.ListItemsViewModel;
 
 import java.util.ArrayList;
 
@@ -13,20 +13,20 @@ import java.util.ArrayList;
 public class ListItemsAdapter extends BaseAdapter {
 
     Context cntx;
-    ArrayList<ListItemViewModel> itemList;
+    ListItemsViewModel itemList;
 
-    public ListItemsAdapter(Context cntx, ArrayList<ListItemViewModel> itemList) {
+    public ListItemsAdapter(Context cntx, ListItemsViewModel itemsList) {
 
     }
 
     @Override
     public int getCount() {
-        return itemList.size();
+        return itemList.listItemViewModels.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return itemList.get(i);
+        return itemList.listItemViewModels.get(i);
     }
 
     @Override

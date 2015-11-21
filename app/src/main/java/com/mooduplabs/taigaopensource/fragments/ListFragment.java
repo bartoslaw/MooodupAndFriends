@@ -23,6 +23,6 @@ public class ListFragment extends BaseFragment {
 
     @Subscribe
     void onDataObtained(ListItemsReadyEvent event) {
-        listItemsAdapter = new ListItemsAdapter(getContext(), event.listItemViewModels);
+        listItemsAdapter = new ListItemsAdapter(getContext(), event.listItemsViewModels);
     }
 }
