@@ -9,6 +9,7 @@ import com.mooduplabs.taigaopensource.viewmodels.ListItemViewModel;
 
 import java.util.ArrayList;
 
+
 public class ListItemsAdapter extends BaseAdapter {
 
     Context cntx;
