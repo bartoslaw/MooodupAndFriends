@@ -14,13 +14,14 @@ public class BaseRequestDispatcher {
     protected HttpClientService httpClientService;
 
     protected String endpoint;
-    protected Parameter parameters;
+    protected Parameter[] parameters;
 
     protected BaseRequestDispatcher() {
         DaggerHttpClientComponent.builder().httpClientModule(new HttpClientModule(false)).build();
     }
 
     public void obtainData(Parameter... parameters) {
+        this.parameters = parameters;
         BusHelper.getInstance().register(this);
     }
 

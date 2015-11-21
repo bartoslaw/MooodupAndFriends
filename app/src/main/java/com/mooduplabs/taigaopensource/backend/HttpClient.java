@@ -27,22 +27,22 @@ public class HttpClient implements HttpClientService {
     }
 
     @Override
-    public void post(String endPoint, AsyncHttpResponseHandler handler, Parameter... params) {
+    public void post(String endPoint, AsyncHttpResponseHandler handler, Parameter[] params) {
         loopj.post(endPoint, getParams(params), handler);
     }
 
     @Override
-    public void get(String endPoint, AsyncHttpResponseHandler handler, Parameter... params) {
+    public void get(String endPoint, AsyncHttpResponseHandler handler, Parameter[] params) {
         loopj.get(endPoint, getParams(params), handler);
     }
 
     @Override
-    public void put(String endPoint, AsyncHttpResponseHandler handler, Parameter... params) {
+    public void put(String endPoint, AsyncHttpResponseHandler handler, Parameter[] params) {
         loopj.put(endPoint, getParams(params), handler);
     }
 
     @Override
-    public void delete(String endPoint, AsyncHttpResponseHandler handler, Parameter... params) {
+    public void delete(String endPoint, AsyncHttpResponseHandler handler, Parameter[] params) {
         loopj.delete(endPoint, getParams(params), handler);
     }
 }
