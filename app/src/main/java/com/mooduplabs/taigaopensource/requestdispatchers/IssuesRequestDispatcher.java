@@ -30,10 +30,10 @@ public class IssuesRequestDispatcher extends BaseRequestDispatcher {
     @Subscribe
     private void onDataObtained(IssuesReadyEvent event) {
 
-        ListItemsReadyEvent itemsReadyEvent = new ListItemsReadyEvent();
+/*        ListItemsReadyEvent itemsReadyEvent = new ListItemsReadyEvent();
         itemsReadyEvent.listItemsViewModels = prepareViewModels(event.jsonData);
         BusHelper.getInstance().post(itemsReadyEvent);
-        BusHelper.getInstance().unregister(this);
+        BusHelper.getInstance().unregister(this);*/
     }
 
     private void httpRequest(){
