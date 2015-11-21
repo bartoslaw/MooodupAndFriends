@@ -1,8 +1,5 @@
 package com.mooduplabs.taigaopensource.viewmodels;
 
-/**
- * Created by Lukasz on 2015-11-21.
- */
 public class ListItemViewModel {
 
     String imageUrl;
