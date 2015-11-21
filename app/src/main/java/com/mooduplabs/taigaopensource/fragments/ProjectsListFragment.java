@@ -3,7 +3,7 @@ package com.mooduplabs.taigaopensource.fragments;
 import com.mooduplabs.taigaopensource.requestdispatchers.ProjectsRequestDispatcher;
 
 /**
- * Created by £ukasz on 2015-11-21.
+ * Created by Lukasz on 2015-11-21.
  */
 public class ProjectsListFragment extends ListFragment {
 
