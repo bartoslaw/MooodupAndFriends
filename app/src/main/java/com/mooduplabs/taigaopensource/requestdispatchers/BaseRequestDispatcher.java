@@ -3,6 +3,7 @@ package com.mooduplabs.taigaopensource.requestdispatchers;
 import com.mooduplabs.taigaopensource.backend.HttpClientService;
 import com.mooduplabs.taigaopensource.components.DaggerHttpClientComponent;
 import com.mooduplabs.taigaopensource.modules.HttpClientModule;
+import com.mooduplabs.taigaopensource.utils.BusHelper;
 
 import javax.inject.Inject;
 
@@ -18,6 +19,7 @@ public class BaseRequestDispatcher {
     }
 
     public void obtainData() {
+        BusHelper.getInstance().register(this);
         httpClientService.getData(endpoint);
     }
 
