@@ -1,5 +1,7 @@
 package com.mooduplabs.taigaopensource.requestdispatchers;
 
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.mooduplabs.taigaopensource.backend.HttpClient;
 import com.mooduplabs.taigaopensource.backend.HttpClientService;
 import com.mooduplabs.taigaopensource.components.DaggerHttpClientComponent;
 import com.mooduplabs.taigaopensource.models.Parameter;
@@ -15,14 +17,15 @@ public class BaseRequestDispatcher {
 
     protected String endpoint;
     protected Parameter[] parameters;
+    protected AsyncHttpResponseHandler responseHandler;
 
     protected BaseRequestDispatcher() {
-        DaggerHttpClientComponent.builder().httpClientModule(new HttpClientModule(false)).build();
+        httpClientService = new HttpClient();
+        //DaggerHttpClientComponent.builder().httpClientModule(new HttpClientModule(false)).build();
     }
 
-    public void obtainData(Parameter... parameters) {
-        this.parameters = parameters;
-        BusHelper.getInstance().register(this);
+    void obtainData() {
+
     }
 
 }

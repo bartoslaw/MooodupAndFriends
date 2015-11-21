@@ -43,11 +43,11 @@ public class IssuesRequestDispatcher extends BaseRequestDispatcher {
     AsyncHttpResponseHandler responseHandler = new TextHttpResponseHandler() {
         @Override
         public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
-            prepareViewModels(responseString);
         }
 
         @Override
         public void onSuccess(int statusCode, Header[] headers, String responseString) {
+            prepareViewModels(responseString);
 
         }
     };

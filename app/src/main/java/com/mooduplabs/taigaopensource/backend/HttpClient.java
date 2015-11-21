@@ -15,7 +15,7 @@ public class HttpClient implements HttpClientService {
     AsyncHttpClient loopj;
 
     public HttpClient() {
-        DaggerRetrofitComponent.builder().retrofitModule(new LoopjModule()).build().inject(this);
+        DaggerRetrofitComponent.builder().loopjModule(new LoopjModule()).build().inject(this);
     }
 
     private RequestParams getParams( Parameter... params){
