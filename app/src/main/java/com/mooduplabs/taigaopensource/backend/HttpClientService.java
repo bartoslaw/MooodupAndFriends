@@ -8,4 +8,5 @@ public interface HttpClientService {
     void get();
     void put();
     void delete();
+    void getData(String endpoint);
 }

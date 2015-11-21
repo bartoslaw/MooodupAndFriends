@@ -7,16 +7,22 @@ import com.mooduplabs.taigaopensource.events.ListItemsReadyEvent;
 
 import de.halfbit.tinybus.Subscribe;
 
-/**
- * Created by £ukasz on 2015-11-21.
- */
 public class ListFragment extends BaseFragment {
 
     ListItemsAdapter listItemsAdapter;
     ListView listItemsListView;
 
+    @Override
+    int getLayoutRes() {
+        return 0;
+    }
+
+    @Override
+    void onFragmentCreated() {
+    }
+
     @Subscribe
     void onDataObtained(ListItemsReadyEvent event) {
-        listItemsAdapter = new ListItemsAdapter(getContext(),event.listItemViewModels);
+        listItemsAdapter = new ListItemsAdapter(getContext(), event.listItemViewModels);
     }
 }
