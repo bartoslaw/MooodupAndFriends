@@ -1,5 +1,7 @@
 package com.mooduplabs.taigaopensource.modules;
 
+import com.mooduplabs.taigaopensource.GlobalConstants;
+
 import javax.inject.Singleton;
 
 import dagger.Module;
@@ -13,7 +15,7 @@ public class RetrofitModule {
     @Singleton
     public Retrofit provideRetrofit(){
         return new Retrofit.Builder()
-                .baseUrl("https://api.github.com")
+                .baseUrl(GlobalConstants.BACKEND_HOST)
                 .build();
     }
 }
