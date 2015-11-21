@@ -1,7 +1,6 @@
 package com.mooduplabs.taigaopensource.modules;
 
 import com.loopj.android.http.AsyncHttpClient;
-import com.mooduplabs.taigaopensource.GlobalConstants;
 
 import javax.inject.Singleton;
 
