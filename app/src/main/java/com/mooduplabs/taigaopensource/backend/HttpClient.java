@@ -9,9 +9,6 @@ import com.mooduplabs.taigaopensource.modules.LoopjModule;
 
 import javax.inject.Inject;
 
-import cz.msebera.android.httpclient.Header;
-
-
 public class HttpClient implements HttpClientService {
 
     @Inject
