@@ -17,4 +17,8 @@ public class BaseRequestDispatcher {
         DaggerHttpClientComponent.builder().httpClientModule(new HttpClientModule(false)).build();
     }
 
+    public void obtainData() {
+        httpClientService.getData(endpoint);
+    }
+
 }
