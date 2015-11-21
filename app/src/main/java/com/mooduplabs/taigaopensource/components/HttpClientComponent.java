@@ -2,7 +2,7 @@ package com.mooduplabs.taigaopensource.components;
 
 import com.mooduplabs.taigaopensource.backend.HttpClientService;
 import com.mooduplabs.taigaopensource.modules.HttpClientModule;
-import com.mooduplabs.taigaopensource.utils.RequestDispatcher;
+import com.mooduplabs.taigaopensource.requestdispatchers.BaseRequestDispatcher;
 
 import javax.inject.Singleton;
 
@@ -12,6 +12,6 @@ import dagger.Component;
 @Singleton
 public interface HttpClientComponent {
 
-    void inject(RequestDispatcher requestDispatcher);
+    void inject(BaseRequestDispatcher requestDispatcher);
     HttpClientService httpClientService();
 }
