@@ -1,10 +1,19 @@
 package com.mooduplabs.taigaopensource.viewmodels;
 
-public class ListItemViewModel {
+/**
+ * Created by Lukasz on 2015-11-21.
+ */
+public class ListItemViewModel extends ViewModel{
 
     String imageUrl;
     String title;
     String subtitle;
+
+    public ListItemViewModel(String imageUrl, String title, String subtitle) {
+        this.imageUrl = imageUrl;
+        this.title = title;
+        this.subtitle = subtitle;
+    }
 
     public String getImageUrl() {
         return imageUrl;

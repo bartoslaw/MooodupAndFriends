@@ -7,7 +7,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 @Generated("org.jsonschema2pojo")
-public class IssueDetailsList {
+public class IssueDetail {
 
     @SerializedName("assigned_to")
     @Expose
