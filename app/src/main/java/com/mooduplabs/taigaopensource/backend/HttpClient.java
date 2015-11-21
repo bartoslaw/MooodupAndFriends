@@ -1,16 +1,16 @@
 package com.mooduplabs.taigaopensource.backend;
 
+import com.loopj.android.http.AsyncHttpClient;
 import com.mooduplabs.taigaopensource.components.DaggerRetrofitComponent;
 import com.mooduplabs.taigaopensource.modules.RetrofitModule;
 
 import javax.inject.Inject;
 
-import retrofit.Retrofit;
 
 public class HttpClient implements HttpClientService {
 
     @Inject
-    Retrofit retrofit;
+    AsyncHttpClient retrofit;
 
     public HttpClient() {
         DaggerRetrofitComponent.builder().retrofitModule(new RetrofitModule()).build().inject(this);
@@ -33,6 +33,11 @@ public class HttpClient implements HttpClientService {
 
     @Override
     public void delete() {
+
+    }
+
+    @Override
+    public void getData(String endpoint) {
 
     }
 }

@@ -6,8 +6,9 @@ package com.mooduplabs.taigaopensource.requestdispatchers;
 public class IssuesRequestDispatcher extends BaseRequestDispatcher {
 
     public IssuesRequestDispatcher() {
-        super();
         this.endpoint = "issuesendpoint";
     }
+
+
 
 }
