@@ -2,11 +2,10 @@ package com.mooduplabs.taigaopensource.fragments;
 
 import com.mooduplabs.taigaopensource.R;
 
-public class RegisterFragment extends BaseFragment {
-
+public class LoginFragment extends BaseFragment {
     @Override
     int getLayoutRes() {
-        return R.layout.fragment_register;
+        return R.layout.fragment_login;
     }
 
     @Override
