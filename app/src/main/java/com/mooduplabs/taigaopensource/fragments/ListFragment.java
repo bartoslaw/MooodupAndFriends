@@ -12,7 +12,9 @@ import de.halfbit.tinybus.Subscribe;
  */
 public class ListFragment extends BaseFragment {
 
-<<<<<<< HEAD
+    ListItemsAdapter listItemsAdapter;
+    ListView listItemsListView;
+
     @Override
     int getLayoutRes() {
         return 0;
@@ -20,14 +22,10 @@ public class ListFragment extends BaseFragment {
 
     @Override
     void onFragmentCreated() {
-
-=======
-    ListItemsAdapter listItemsAdapter;
-    ListView listItemsListView;
+    }
 
     @Subscribe
     void onDataObtained(ListItemsReadyEvent event) {
-        listItemsAdapter = new ListItemsAdapter(getContext(),event.listItemViewModels);
->>>>>>> 73c25a13e76ae9b1911147990102f3039cbe6e29
+        listItemsAdapter = new ListItemsAdapter(getContext(), event.listItemViewModels);
     }
 }
