@@ -1,5 +1,7 @@
 package com.mooduplabs.taigaopensource.requestdispatchers;
 
+import com.mooduplabs.taigaopensource.backend.HttpClient;
+import com.mooduplabs.taigaopensource.backend.HttpClientService;
 import com.mooduplabs.taigaopensource.events.IssuesReadyEvent;
 import com.mooduplabs.taigaopensource.events.ListItemsReadyEvent;
 import com.mooduplabs.taigaopensource.utils.BusHelper;
@@ -30,6 +32,11 @@ public class IssuesRequestDispatcher extends BaseRequestDispatcher {
         BusHelper.getInstance().post(itemsReadyEvent);
         BusHelper.getInstance().unregister(this);
     }
+
+    private void httpRequest(){
+       // httpClientService.get();
+    }
+
 
     private ListItemsViewModel prepareViewModels(JSONObject jsonData) {
         //jsonData.getJSONArray("issues")

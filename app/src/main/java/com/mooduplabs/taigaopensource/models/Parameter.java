@@ -1,13 +1,13 @@
 package com.mooduplabs.taigaopensource.models;
 
-public class Parameters {
+public class Parameter {
     String key;
     String value;
 
-    public Parameters() {
+    public Parameter() {
     }
 
-    public Parameters(String key, String value) {
+    public Parameter(String key, String value) {
         this.key = key;
         this.value = value;
     }
