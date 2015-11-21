@@ -20,7 +20,7 @@ public class BaseRequestDispatcher {
         DaggerHttpClientComponent.builder().httpClientModule(new HttpClientModule(false)).build();
     }
 
-    public void obtainData() {
+    public void obtainData(Parameter... parameters) {
         BusHelper.getInstance().register(this);
     }
 
