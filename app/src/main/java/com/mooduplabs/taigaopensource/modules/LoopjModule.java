@@ -8,11 +8,11 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class RetrofitModule {
+public class LoopjModule {
 
     @Provides
     @Singleton
-    public AsyncHttpClient provideRetrofit(){
+    public AsyncHttpClient provideLoopj(){
         return new AsyncHttpClient();
     }
 }
