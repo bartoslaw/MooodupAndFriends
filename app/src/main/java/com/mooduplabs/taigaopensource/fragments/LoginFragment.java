@@ -38,7 +38,7 @@ public class LoginFragment extends BaseFragment {
 
     @OnClick(R.id.login_submit)
     void onSubmitClick() {
-       // GlobalConstants.BACKEND_HOST = domainEdit.getText().toString();
+        //GlobalConstants.BACKEND_HOST = domainEdit.getText().toString();
         requestDispatcher.obtainData(new Parameter("username",usernameEdit.getText().toString()),
                 new Parameter("password",passwordEdit.getText().toString()),new Parameter("type","normal"));
     }

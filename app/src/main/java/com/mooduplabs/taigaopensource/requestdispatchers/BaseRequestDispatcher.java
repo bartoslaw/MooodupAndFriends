@@ -24,8 +24,7 @@ public class BaseRequestDispatcher {
         //DaggerHttpClientComponent.builder().httpClientModule(new HttpClientModule(false)).build();
     }
 
-    void obtainData() {
-
+    public void obtainData(Parameter... parameters) {
     }
 
 }
